@@ -1,8 +1,47 @@
 <!DOCTYPE>
 <html>
 	<head>
+		<meta charset="UTF-8">
 	</head>
 	<body>
-		
+		<a href="a.html"> Link do aktualnej strony - względny </a><br/>
+		<a href="https://github.com/Profana92/HTML-Elements"> Link do aktualnej strony - bezwzględny </a><br/>
+		<a href="a.html" download=""> Link do pobrania pliku </a><br/>
+		<a href="a.html" download="domyslna_nazwa.html"> Link do pobrania pliku - z nadaną nazwą domyslną </a><br/>
+		<a href="a_pl.html" hreflang="pl"> Link do strony w języku Polskim </a><br/>
+		<a href="a_eng.html" hreflang="en"> Link do strony w języku Angielskim </a><br/>
+		<a href="a.html" target="_self"> Link do aktualnej strony - otworzy się w tym samym oknie </a><br/>
+		<a href="a.html" target="_blank"> Link do aktualnej strony - otworzy się w tym nowym oknie </a><br/>
+		<a href="#docEnd"> Link do elementu o o Id="#docEnd" </a><br/>
+
+
+
+
+		<P>
+			Dodatkowe atrybuty znacznika a:
+			<ul>
+				<li>ping - Zawiera oddzieloną spacją listę adresów URL, do których, gdy następuje hiperłącze, żądania POST (en-US) z oznaczeniem PING będą wysyłane przez przeglądarkę (w tle). Najczęściej używane do śledzenia.  </li>
+				<li>referrerpolicy - Wskazuje który odsyłacz należy wysłać podczas pobierania adresu URL 
+					<ul>
+						<li>'no-referrer' oznacza, że Referer: nagłówek nie zostanie wysłany.</li>
+						<li>'no-referrer-when-downgrade' oznacza, że Referer: nagłówek nie zostanie wysłany podczas nawigacji do miejsca pochodzenia bez HTTPS. Jest to zachowanie domyślne.</li>
+						<li>'origin' oznacza, że odsyłającym będzie pochodzenie strony, nie włączając informacji po domenie.</li>
+						<li>'origin-when-cross-origin' oznacza, że nawigacja do innych miejsc pochodzenia będzie ograniczona do schematu, hosta i portu, podczas gdy nawigacja w tym samym miejscu pochodzenia będzie obejmować ścieżkę strony odsyłającej.</li>
+						<li>'strict-origin-when-cross-origin'</li>
+						<li>'unsafe-url' oznacza, że odsyłacz będzie zawierał pochodzenie i ścieżkę, ale nie fragment, hasło, lub nazwę użytkownika. Jest to niebezpieczne, ponieważ może spowodować przeciek danych z bezpiecznych adresów URL do niepewnych.</li>
+					</ul>
+				</li>
+				<li>rel - Określa relację obiektu docelowego z obiektem łącza. Wartość jest oddzieloną spacjami listą typów łączy.</li>
+				<li>target - Określa, gdzie ma być wyświetlany link URL. Jest to nazwa lub słowo kluczowe kontekstu przeglądania, zakładki, okna lub iframe. Następujące słowa kluczowe mają specjalne znaczenie: </li>
+				<ul>
+					<li>_self: Wczytuje adres URL do tego samego kontekstu przeglądania, co bieżący. Jest to zachowanie domyślne.</li>
+					<li>_blank: Wczytuje adres URL w nowy kontekst przeglądania. Zazwyczaj jest to zakładka, ale użytkownicy mogą skonfigurować przeglądarkę tak, aby korzystała z nowych okien.</li>
+					<li>_parent: Ładuje adres URL do nadrzędnego kontekstu przeglądania bieżącego. Jeśli nie ma rodzica, zachowuje się tak samo jak _self.</li>
+					<li>_top: Wczytuje adres URL w kontekst przeglądania na najwyższym poziomie (czyli "najwyższy" kontekst przeglądania, który jest przodkiem obecnego i nie ma rodzica). Jeśli nie ma rodzica, zachowuje się tak samo jak _self.</li>
+				</ul>
+				<li>type - Określa typ nośnika w postaci typu MIME dla połączonego adresu URL. Jest to czysto doradcze, bez wbudowanych funkcji.</li>
+			</ul>
+		</P>
+		<p id="docEnd">
 	</body>
 </html>
