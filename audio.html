@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    odtwarzacz bez kontrolek<br/>
+    <audio autoplay>
+      <source src="sound/horse.ogg" type="audio/ogg">
+      Twoja przeglądarka nie wspiera odtwarzania dzwięków.
+    </audio><br/>
+    odtwarzacz z kontrolkami<br/>
+    <audio controls>
+      <source src="sound/horse.ogg" type="audio/ogg">
+      Twoja przeglądarka nie wspiera odtwarzania dzwięków.
+    </audio>
+
+    <audio controls muted>
+      <source src="sound/horse.ogg" type="audio/ogg">
+      Twoja przeglądarka nie wspiera odtwarzania dzwięków.
+    </audio>
+      <article>
+        Składa się z znaczników audio i /audio i wewnątrz nich znacznikiem source z artybutem src.
+        Wspierane formaty: MP3, WAV, and OGG<br/>
+        wspierane dodatkowe atrybuty:
+        <ul>
+          <li>src - zapetlanie sie odtwarzanego dzwieku</li>
+          <li>autoplay - umieszczany w wlemencie audio bez wartości, określa że odtwarzanie powinno zacząć się automatycznie po załadowaniu strony</li>
+          <li>controls - okresla, ze element powinien miec np przycisk play/pause</li>
+          <li>loop - zapetlanie sie odtwarzanego dzwieku</li>
+          <li>muted - określa, czy player ma być domyślnie wyciszony</li>
+          <li>preload - z argumentami auto, metadata i none okresla jak dzwiek ma byc zaladowany kiedy laduje sie strona</li>
+        </ul>
+      </article>
+  </body>
+</html>
