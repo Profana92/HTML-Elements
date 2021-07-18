@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+Element Canvas uzywany jest do rysowania grafik w locie, poprzez skrypty, zazwyczaj javascript, jest elementem przezroczystym i stanowi tylko pojemnik na grafikę, zeby cos narysowac trzeba uzyc kodu javascript.
+Test zavarty w elemencie canvas wyswietli sie jesli przegladarka nie obsluguje skryptów (np gdy wylaczymy javascript)
+dodatkowe atrybuty elementu (poza globalnymi) to height i width, ktore i tak powinny byc okreslane w pliku CSS.
+ <canvas id="myCanvas">
+Your browser does not support the canvas tag.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 80, 80);
+</script> 
+
+</body>
+</html> 
